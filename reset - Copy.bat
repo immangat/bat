@@ -15,16 +15,6 @@ echo === FNSRWR v1 by DannyVoid ===
 echo ==============================
 echo.
 
-:choice
-echo Do you want to continue?
-echo This will temporarily disable internet access!
-set /P c=[Y/N]
-if /I "%c%" EQU "Y" goto :continue
-if /I "%c%" EQU "N" goto :stop
-
-goto :choice
-
-:continue
 echo.
 echo Releasing and Renewing...
 ipconfig /release >NUL
